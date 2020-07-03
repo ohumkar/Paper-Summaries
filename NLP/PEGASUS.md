@@ -41,6 +41,10 @@ Si = rogue( Xi , D / {Xi} )</br>
 Selecting sentences sequentially (Seq) by greedily maximizing the ROUGE1-F1 between selected sentences S∪{xi}, and remaining sentences,D / (S∪{xi})</br>
 S U {Xi} (history + current} and D / S U {Xi} (remaining document given seq)</br>
 Si = rogue(S U {Xi}, D / S U {Xi})</br></br>
+<div align = "center">
+<img align = "center" src = "image/pegasus_algo.PNG" height = 200>
+</div>
+</br>
 
 They also considered n-grams as a set (**Uniq**) instead of double-counting identical n-grams as in the original implementation (Orig), resulting in four variants of the principal sentence selection strategy
 
