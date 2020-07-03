@@ -2,6 +2,8 @@ PEGASUS
 
 <p style="text-align: center;"> <h1> PEGASUS: Pre-training with Extracted Gap-sentences forAbstractive Summarization </h1></p>
 
+</br>
+
 ### Summary :</br>
 The authors propose a new self-supervised pre-training objective for abstractive summarization: Gap Sentence Generation (GSG); Important sentences are removed/masked from an input document and are generated together as one output sequence from the remaining sentences/ document .
 They demonstrate that PEGASUS achieves state-of-the-art per-formance on all 12 downstream data sets and a surprising performance on low-resource summarization, which surpasses previous state-of-the-art results on 6 datasets with only 1000 examples
@@ -25,7 +27,15 @@ The authors hypothesize that this objective is suitable for abstractive summariz
 
 ### Method :</br>
 Select and mask whole sentences from documents, and concatenate the gap-sentences into a pseudo-summary. The corresponding position of each selected gap sentence is replaced by a mask token [MASK1] to inform the model.
+<div align = "center">
+<img align = "center" src = "image/pegasus_model.PNG" height = 400>
+</div>
 
+<p align="center">
+  <img "image/pegasus_model.PNG" height = 400 />
+</p>
+</br> 
+ 
 They tried 3 primary strategies for selecting m gap sentences from a document D = {xi}n containing n words
 - **Random** → Uniformly get m words randomly
 - **Lead** → First m words
@@ -40,6 +50,28 @@ Si = rogue(S U {Xi}, D / S U {Xi})</br></br>
 
 
 
-<img align = "center" src = "image/pegasus_model.PNG" height = 400>
+MLM : Masked Language Model similar to that of BERTs. 
+ Select 15% tokens in the input text; the selected tokens are :
+80% of time replaced by a mask token [MASK2]
+10% of time replaced by a random token
+10% of time unchanged
+
+Apply MLM to train the Transformer encoder as the sole pre-training objec-tive or along with GSG
+Ablations :
+Ablation experiments were performed on a  reduced-size model PEGASUS SMALL to make choices for large model (final) PEGASUS LARGE.
+
+GSG :   
+Results suggested choosing principal sentences worked best for downstream summarization tasks,and they chose Ind-Orig for the PEGASUS LARGE.
+
+GSR : 
+Gap Sentence Ratio, refers to the number of selected gap sentences to the total number of sentences in the document, 
+A low GSR makes the pre-training less chal-lenging and computationally efficient. 
+  high  GSR  loses  contextual information necessary to guide the generation
+An effective GSR of 30% was chosen for PEGASUS LARGE
+
+MLM : 
+Model pre-trained with MLM alone performed significantly worse 
+MLM & Ind-Orig had similar performance as Random
+Hence they choose not to include MLM in PEGASUS LARGE
 
 
