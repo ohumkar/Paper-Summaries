@@ -1,11 +1,5 @@
 PEGASUS
 
-![alt text](https://github.com/ohumkar/Paper-Summaries/blob/master/NLP/image/pegasus_model.png "MODEL")
+![](https://github.com/ohumkar/Paper-Summaries/blob/master/NLP/image/pegasus_model.PNG)
+<img src = 'image/pegasus_model.png">
 
-![alt text](image/pegasus_model.PNG)
-
-![alt text](https://github.com/ohumkar/Paper-Summaries/blob/master/NLP/image/pegasus_algo.JPG)
-
-![alt text](https://github.com/ohumkar/Paper-Summaries/blob/master/NLP/image/pegasus_model.PNG)
-
-![](/image/my.jpg)
