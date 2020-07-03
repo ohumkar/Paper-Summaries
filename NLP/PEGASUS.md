@@ -1,5 +1,5 @@
 PEGASUS
 
 ![](https://github.com/ohumkar/Paper-Summaries/blob/master/NLP/image/pegasus_model.PNG)
-<img src = 'image/pegasus_model.png">
+
 
