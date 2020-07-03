@@ -2,7 +2,7 @@
 
 </br>
 
-## Foundation  :</br>
+## Point Cloud  :</br>
 A point cloud is close to raw sensor data, which can be easily inter-converted into other forms. Point cloud data is mainly characterized by (x,y,z) and sometimes channel information (colors)
 Earlier models handled 3D by converting point cloud to other representations (Volumetric: Voxels, Multiview images: From 3D generated model)
 </br>
