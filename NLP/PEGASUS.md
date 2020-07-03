@@ -1,6 +1,6 @@
 PEGASUS
 
-<p style="text-align: center;"> <h1> PEGASUS: Pre-training with Extracted Gap-sentences forAbstractive Summarization </p>
+<p style="text-align: center;"> <h1> PEGASUS: Pre-training with Extracted Gap-sentences forAbstractive Summarization </h1></p>
 
 **Summary** :</br>
 The authors propose a new self-supervised pre-training objective for abstractive summarization: Gap Sentence Generation (GSG); Important sentences are removed/masked from an input document and are generated together as one output sequence from the remaining sentences/ document .
