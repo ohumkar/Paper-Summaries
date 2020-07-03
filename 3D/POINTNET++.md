@@ -53,17 +53,21 @@ The  hierarchical structure is composed of a number offset abstraction levels wh
 <img align = "center" src = "image/pointnet++_msg.JPG" height = 300>
 </div>
 </br>
-Each abstraction level extracts multiple scales of local patterns and combines them intelligently according to local point densities. Two types of density adaptive layers
+Each abstraction level extracts multiple scales of local patterns and combines them intelligently according to local point densities. </br>
+Two types of density adaptive layers</br>
+
 - _Multi-scale grouping (MSG)_ :</br>
 Apply grouping layers with different scales followed by according PointNets to extract features of each scale. 
-Features at different scales are concatenated to form a multi-scale feature.
+Features at different scales are concatenated to form a multi-scale feature.</br>
+
 - _Multi-resolution grouping (MRG)_ :</br>
   Features of a region at some level Li is a concatenation of two vectors</br>
   1. Summarizing the features at each subregion from the lower level Li−1
   2. Directly processing all raw points in the local region using a single PointNet</br>
   
-  _For low density local regions_ → 1st may be less reliable,since the subregion in computing the 1st vector contains even sparser points, hence the 2nd  vector is  weighted higher. </br>
-  _For high density local regions_ → 1st vector provides information of finer details since it possesses the ability to inspect at higher resolutions recursively in lower levels
+  
+_For low density local regions_ → MSG may be less reliable,since the subregion in computing the MSG vector contains even sparser points, hence the MRG  vector is  weighted higher. </br>
+_For high density local regions_ → MSG vector provides information of finer details since it possesses the ability to inspect at higher resolutions recursively in lower levels
 </br>
 </br>
 
