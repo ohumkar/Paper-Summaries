@@ -49,10 +49,13 @@ _What global features learn ?_</br>
 - Non contributing to global features capture volume
 - Since global features learn contours, hence robust to less data
 
-F → vector global signature of the input
-For classification → Pass vector through classifier (e.g., SVM)
-For Segmentation → requires a combination of global and local knowledge
-Concatenate with point features → extract new per point features which take into consideration local and global information
+F → vector global signature of the input</br>
+_For classification_ </br>
+→ Pass vector through classifier (e.g., SVM)</br>
+_For Segmentation_ </br>
+→ Requires a combination of global and local knowledge</br>
+→ Concatenate with point features </br>
+→ Extract new per point features which take into consideration local and global information
 </br>
 </br>
  
