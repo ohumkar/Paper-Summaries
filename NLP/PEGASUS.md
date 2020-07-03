@@ -1,6 +1,6 @@
 PEGASUS
 
-## PEGASUS: Pre-training with Extracted Gap-sentences forAbstractive Summarization
+<p align = "center"> <h1> PEGASUS: Pre-training with Extracted Gap-sentences forAbstractive Summarization </p>
 
 
 
