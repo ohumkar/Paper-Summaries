@@ -1,5 +1,3 @@
-PEGASUS
-
 <p style="text-align: center;"> <h1> PEGASUS: Pre-training with Extracted Gap-sentences forAbstractive Summarization </h1></p>
 
 </br>
