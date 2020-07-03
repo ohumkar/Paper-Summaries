@@ -70,7 +70,7 @@ Model pre-trained with MLM alone performed significantly worse
 MLM & Ind-Orig had similar performance as Random
 Hence they choose not to include MLM in PEGASUS LARGE
 
-## Main Contribution :
+## Main Contributions :
 - A new self-supervised pre-training objective for abstractive summarization, GSG and studied strategies for selecting those sentences.
 - Evaluate the proposed pre-training objective on a broad range of downstream summarization tasks, with careful ablations to choose the best model settings, with the state-of-the-art on all 12 downstream datasets considered
 - Showed how good abstractive summarization performance  can  be  achieved  across  broad  domains  with very little supervision by fine-tuning the PEGASUS
