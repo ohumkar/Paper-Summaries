@@ -50,7 +50,7 @@ The  hierarchical structure is composed of a number offset abstraction levels wh
 
 **Robust Point Sampling** : </br>
 <div align = "center">
-<img align = "center" src = "image/pointnet++_msg.JPG" height = 400>
+<img align = "center" src = "image/pointnet++_msg.JPG" height = 300>
 </div>
 </br>
 Each abstraction level extracts multiple scales of local patterns and combines them intelligently according to local point densities. Two types of density adaptive layers
