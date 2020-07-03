@@ -31,6 +31,11 @@ A collection of f’s capture different aspects of data
 </br>
 
 ## Model :</br> 
+<div align = "center">
+<img align = "center" src = "image/pointnet_model.JPG" height = 400>
+</div>
+</br>
+
 - Input is (n,3) point data (ignoring colour info)
 - Fully connected layers / MLP network with sizes 64, 64, 64, 128, 1024 applied to each point - individually mapping R3→R1024
 - Max pooling to obtain global feature vector (n,1024) → (1024,1)
@@ -48,7 +53,21 @@ F → vector global signature of the input
 For classification → Pass vector through classifier (e.g., SVM)
 For Segmentation → requires a combination of global and local knowledge
 Concatenate with point features → extract new per point features which take into consideration local and global information
-
 </br>
 </br>
  
+## Main Contributions :</br>
+- Design  a  novel  deep  net  architecture  suitable  for consuming unordered point sets in 3D
+- Can  be  trained  to  perform 3D shape classification,  shape part segmentation and scene semantic parsing tasks
+- Robust to data corruption because of learning of global features (e.g., 2% acc loss at 50 % data loss) compared to previous models
+- Robust to outliers compared to previous models
+
+</br>
+</br>
+
+## Bottlenecks and Stability :</br>
+- Expressiveness of NN is strongly affected by dimensions of max pooling layer
+- Makes no use of local structure and cannot learn hierarchical features. Improved in PointNet++
+
+</br>
+</br>
