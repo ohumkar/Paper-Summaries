@@ -27,9 +27,6 @@ The authors hypothesize that this objective is suitable for abstractive summariz
 
 ### Method :</br>
 Select and mask whole sentences from documents, and concatenate the gap-sentences into a pseudo-summary. The corresponding position of each selected gap sentence is replaced by a mask token [MASK1] to inform the model.
-<div align = "center">
-<img align = "center" src = "image/pegasus_model.PNG" height = 400>
-</div>
 
 <p align="center">
   <img "image/pegasus_model.PNG" height = 400 />
