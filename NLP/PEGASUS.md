@@ -35,10 +35,10 @@ They tried 3 primary strategies for selecting m gap sentences from a document D 
 - **Random** → Uniformly get m words randomly
 - **Lead** → First m words
 - **Principle** →
-By independently scoring each sentence (**Ind**)</br>
+_By independently scoring each sentence_ (**Ind**)</br>
 Select top-m scored by importance assigned by ROGUE F1 score</br>
 Si = rogue( Xi , D / {Xi} )</br>
-Selecting sentences sequentially (Seq) by greedily maximizing the ROUGE1-F1 between selected sentences S∪{xi}, and remaining sentences,D / (S∪{xi})</br>
+_Selecting sentences sequentially (Seq)_ by greedily maximizing the ROUGE1-F1 between selected sentences S∪{xi}, and remaining sentences,D / (S∪{xi})</br>
 S U {Xi} (history + current} and D / S U {Xi} (remaining document given seq)</br>
 Si = rogue(S U {Xi}, D / S U {Xi})</br></br>
 <div align = "center">
@@ -56,7 +56,7 @@ Select 15% tokens in the input text; the selected tokens are :
 10% of time replaced by a random token
 10% of time unchanged
 
-Apply MLM to train the Transformer encoder as the sole pre-training objec-tive or along with GSG
+Apply MLM to train the Transformer encoder as the sole pre-training objective or along with GSG
 ## Ablations :
 Ablation experiments were performed on a  reduced-size model PEGASUS SMALL to make choices for large model (final) PEGASUS LARGE.
 
